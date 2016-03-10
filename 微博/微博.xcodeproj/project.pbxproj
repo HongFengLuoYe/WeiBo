@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046A15B31C911D0000D81D23 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15B21C911D0000D81D23 /* HomeController.m */; };
+		046A15B61C911D2000D81D23 /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15B51C911D2000D81D23 /* MessageController.m */; };
+		046A15B91C911D3700D81D23 /* DiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15B81C911D3700D81D23 /* DiscoverController.m */; };
+		046A15BC1C911D4F00D81D23 /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15BB1C911D4F00D81D23 /* MoreController.m */; };
 		04CB877E1C9010500015F0B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB877D1C9010500015F0B2 /* main.m */; };
 		04CB87971C9010500015F0B2 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB87961C9010500015F0B2 /* __Tests.m */; };
 		04CB87A21C9010500015F0B2 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB87A11C9010500015F0B2 /* __UITests.m */; };
@@ -32,6 +36,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		046A15B11C911D0000D81D23 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		046A15B21C911D0000D81D23 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		046A15B41C911D2000D81D23 /* MessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageController.h; sourceTree = "<group>"; };
+		046A15B51C911D2000D81D23 /* MessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageController.m; sourceTree = "<group>"; };
+		046A15B71C911D3700D81D23 /* DiscoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverController.h; sourceTree = "<group>"; };
+		046A15B81C911D3700D81D23 /* DiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverController.m; sourceTree = "<group>"; };
+		046A15BA1C911D4F00D81D23 /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreController.h; sourceTree = "<group>"; };
+		046A15BB1C911D4F00D81D23 /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreController.m; sourceTree = "<group>"; };
 		04CB87791C9010500015F0B2 /* 微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CB877D1C9010500015F0B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CB878D1C9010500015F0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046A15B01C911CC600D81D23 /* Mudles */ = {
+			isa = PBXGroup;
+			children = (
+				046A15B11C911D0000D81D23 /* HomeController.h */,
+				046A15B21C911D0000D81D23 /* HomeController.m */,
+				046A15B41C911D2000D81D23 /* MessageController.h */,
+				046A15B51C911D2000D81D23 /* MessageController.m */,
+				046A15B71C911D3700D81D23 /* DiscoverController.h */,
+				046A15B81C911D3700D81D23 /* DiscoverController.m */,
+				046A15BA1C911D4F00D81D23 /* MoreController.h */,
+				046A15BB1C911D4F00D81D23 /* MoreController.m */,
+			);
+			name = Mudles;
+			path = Class/Mudles;
+			sourceTree = "<group>";
+		};
 		04CB87701C9010500015F0B2 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				04CB87B31C90121B0015F0B2 /* Class */,
+				046A15B01C911CC600D81D23 /* Mudles */,
 				04CB877C1C9010500015F0B2 /* Supporting Files */,
 			);
 			path = "微博";
@@ -271,7 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CB87B61C90121B0015F0B2 /* AppDelegate.m in Sources */,
+				046A15B31C911D0000D81D23 /* HomeController.m in Sources */,
 				04CB877E1C9010500015F0B2 /* main.m in Sources */,
+				046A15B91C911D3700D81D23 /* DiscoverController.m in Sources */,
+				046A15BC1C911D4F00D81D23 /* MoreController.m in Sources */,
+				046A15B61C911D2000D81D23 /* MessageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +515,7 @@
 				04CB87A81C9010500015F0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04CB87A91C9010500015F0B2 /* Build configuration list for PBXNativeTarget "微博Tests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +524,7 @@
 				04CB87AB1C9010500015F0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04CB87AC1C9010500015F0B2 /* Build configuration list for PBXNativeTarget "微博UITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +533,7 @@
 				04CB87AE1C9010500015F0B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

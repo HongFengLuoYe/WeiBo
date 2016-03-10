@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeController.h"
+#import "MessageController.h"
+#import "DiscoverController.h"
+#import "MoreController.h"
 
 @interface AppDelegate ()
 
@@ -25,54 +29,42 @@
     UITabBarController *tabbarCtrl = [[UITabBarController alloc] init];
     self.window.rootViewController  = tabbarCtrl;
     
-    UIViewController *viewCtrl1 = [[UIViewController alloc] init];
-    viewCtrl1.view.backgroundColor = RandomClolor;
-    viewCtrl1.tabBarItem.title = @"首页";
-    viewCtrl1.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
-    viewCtrl1.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_home_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    HomeController *viewCtrl1 = [[HomeController alloc] init];
+    [self addChild:viewCtrl1 AndTitle:@"首页" AndImage:@"tabbar_home" AndselectImage:@"tabbar_home_selected"];
+    
+    
+    MessageController *viewCtrl2 = [[MessageController alloc] init];
+    [self addChild:viewCtrl2 AndTitle:@"消息" AndImage:@"tabbar_message_center" AndselectImage:@"tabbar_message_center_selected"];
+    
+    DiscoverController *viewCtrl3 = [[DiscoverController alloc] init];
+    [self addChild:viewCtrl3 AndTitle:@"发现" AndImage:@"tabbar_discover" AndselectImage:@"tabbar_discover_selected"];
+
+    
+    MoreController *viewCtrl4 = [[MoreController alloc] init];
+    [self addChild:viewCtrl4 AndTitle:@"我" AndImage:@"tabbar_profile" AndselectImage:@"tabbar_profile_selected"];
+
+
+    tabbarCtrl.viewControllers = @[viewCtrl1,viewCtrl2,viewCtrl3,viewCtrl4];
+    
+    
+    return YES;
+}
+
+-(void)addChild:(UIViewController *)viewCtrl AndTitle:(NSString *)title AndImage:(NSString *)image AndselectImage:(NSString *)selectImage
+{
+    
+    viewCtrl.view.backgroundColor = RandomClolor;
+    viewCtrl.tabBarItem.title = title;
+    viewCtrl.tabBarItem.image = [UIImage imageNamed:image];
+    viewCtrl.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
     NSMutableDictionary *TextAttributes = [NSMutableDictionary dictionary];
     TextAttributes[NSForegroundColorAttributeName] = [UIColor blackColor];
     NSMutableDictionary *SelectTextAttributes = [NSMutableDictionary dictionary];
     SelectTextAttributes[NSForegroundColorAttributeName] = [UIColor orangeColor];
     
-    
-    UIViewController *viewCtrl2 = [[UIViewController alloc] init];
-    viewCtrl2.view.backgroundColor = RandomClolor;
-    viewCtrl2.tabBarItem.title = @"消息";
-    viewCtrl2.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
-    viewCtrl2.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_message_center_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [viewCtrl2.tabBarItem setTitleTextAttributes:TextAttributes forState:UIControlStateNormal];
-    [viewCtrl2.tabBarItem setTitleTextAttributes:SelectTextAttributes forState:UIControlStateSelected];
-    
-    UIViewController *viewCtrl3 = [[UIViewController alloc] init];
-    viewCtrl3.view.backgroundColor = RandomClolor;
-    viewCtrl3.tabBarItem.title = @"发现";
-    viewCtrl3.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
-    viewCtrl3.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_discover_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [viewCtrl3.tabBarItem setTitleTextAttributes:TextAttributes forState:UIControlStateNormal];
-    [viewCtrl3.tabBarItem setTitleTextAttributes:SelectTextAttributes forState:UIControlStateSelected];
-
-    
-    UIViewController *viewCtrl4 = [[UIViewController alloc] init];
-    viewCtrl4.view.backgroundColor = RandomClolor;
-    viewCtrl4.tabBarItem.title = @"我";
-    viewCtrl4.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
-    viewCtrl4.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabbar_profile_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    [viewCtrl4.tabBarItem setTitleTextAttributes:TextAttributes forState:UIControlStateNormal];
-    [viewCtrl4.tabBarItem setTitleTextAttributes:SelectTextAttributes forState:UIControlStateSelected];
-
-    
-    
-    tabbarCtrl.viewControllers = @[viewCtrl1,viewCtrl2,viewCtrl3,viewCtrl4];
-    
-    
-    
-    
-
-
-    
-
-    return YES;
+    [viewCtrl.tabBarItem setTitleTextAttributes:TextAttributes forState:UIControlStateNormal];
+    [viewCtrl.tabBarItem setTitleTextAttributes:SelectTextAttributes forState:UIControlStateSelected];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
