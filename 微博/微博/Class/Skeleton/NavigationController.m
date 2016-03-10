@@ -12,8 +12,23 @@
 
 @end
 
+
+
 @implementation NavigationController
 
++(void)initialize
+{
+   UIBarButtonItem  *item =  [UIBarButtonItem appearance];
+    NSMutableDictionary *textAttri = [NSMutableDictionary dictionary];
+    textAttri[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttri[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:textAttri forState:UIControlStateNormal];
+    
+    NSMutableDictionary *disableTextAttri = [NSMutableDictionary dictionary];
+    disableTextAttri[NSForegroundColorAttributeName] = [UIColor grayColor];
+    disableTextAttri[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:disableTextAttri forState:UIControlStateDisabled];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
