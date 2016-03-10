@@ -16,13 +16,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-        // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self createItems];
 }
+
+-(void)createItems
+{
+    self.navigationItem.leftBarButtonItem =[UIBarButtonItem creatNavigionItemsWithTarget:self Action:@selector(friendsearch) AndImage:@"navigationbar_friendsearch" AndhighLightedImage:@"navigationbar_friendsearch_highlighted"];
+    
+    self.navigationItem.rightBarButtonItem =[UIBarButtonItem creatNavigionItemsWithTarget:self Action:@selector(pop) AndImage:@"navigationbar_pop" AndhighLightedImage:@"navigationbar_pop_highlighted"];
+    
+}
+
+
+
+-(void)friendsearch
+{
+    NSLog(@"hello");
+}
+
+-(void)pop
+{
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
