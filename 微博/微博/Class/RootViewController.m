@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "NavigationController.h"
 #import "HomeController.h"
 #import "MessageController.h"
 #import "DiscoverController.h"
@@ -22,7 +23,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self creatTabbarItem];
     
 }
@@ -43,15 +43,14 @@
     MoreController *viewCtrl4 = [[MoreController alloc] init];
     [self addChild:viewCtrl4 AndTitle:@"我" AndImage:@"tabbar_profile" AndselectImage:@"tabbar_profile_selected"];
     
-    
-    self.viewControllers = @[viewCtrl1,viewCtrl2,viewCtrl3,viewCtrl4];
 }
 
 -(void)addChild:(UIViewController *)viewCtrl AndTitle:(NSString *)title AndImage:(NSString *)image AndselectImage:(NSString *)selectImage
 {
     
-    viewCtrl.view.backgroundColor = RandomClolor;
-    viewCtrl.tabBarItem.title = title;
+    
+//    viewCtrl.view.backgroundColor = RandomClolor;
+    viewCtrl.title = title;
     viewCtrl.tabBarItem.image = [UIImage imageNamed:image];
     viewCtrl.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
@@ -62,6 +61,10 @@
     
     [viewCtrl.tabBarItem setTitleTextAttributes:TextAttributes forState:UIControlStateNormal];
     [viewCtrl.tabBarItem setTitleTextAttributes:SelectTextAttributes forState:UIControlStateSelected];
+    NavigationController *navigationCtrl = [[NavigationController alloc] initWithRootViewController:viewCtrl];
+
+    
+    [self addChildViewController:navigationCtrl];
 }
 
 
