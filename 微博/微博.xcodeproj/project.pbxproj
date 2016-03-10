@@ -11,6 +11,7 @@
 		046A15B61C911D2000D81D23 /* MessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15B51C911D2000D81D23 /* MessageController.m */; };
 		046A15B91C911D3700D81D23 /* DiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15B81C911D3700D81D23 /* DiscoverController.m */; };
 		046A15BC1C911D4F00D81D23 /* MoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15BB1C911D4F00D81D23 /* MoreController.m */; };
+		046A15BF1C911FF100D81D23 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A15BE1C911FF100D81D23 /* RootViewController.m */; };
 		04CB877E1C9010500015F0B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB877D1C9010500015F0B2 /* main.m */; };
 		04CB87971C9010500015F0B2 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB87961C9010500015F0B2 /* __Tests.m */; };
 		04CB87A21C9010500015F0B2 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB87A11C9010500015F0B2 /* __UITests.m */; };
@@ -44,6 +45,8 @@
 		046A15B81C911D3700D81D23 /* DiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverController.m; sourceTree = "<group>"; };
 		046A15BA1C911D4F00D81D23 /* MoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreController.h; sourceTree = "<group>"; };
 		046A15BB1C911D4F00D81D23 /* MoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreController.m; sourceTree = "<group>"; };
+		046A15BD1C911FF100D81D23 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		046A15BE1C911FF100D81D23 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		04CB87791C9010500015F0B2 /* 微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CB877D1C9010500015F0B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CB878D1C9010500015F0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 			children = (
 				04CB87B41C90121B0015F0B2 /* AppDelegate.h */,
 				04CB87B51C90121B0015F0B2 /* AppDelegate.m */,
+				046A15BD1C911FF100D81D23 /* RootViewController.h */,
+				046A15BE1C911FF100D81D23 /* RootViewController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04CB87B61C90121B0015F0B2 /* AppDelegate.m in Sources */,
+				046A15BF1C911FF100D81D23 /* RootViewController.m in Sources */,
 				046A15B31C911D0000D81D23 /* HomeController.m in Sources */,
 				04CB877E1C9010500015F0B2 /* main.m in Sources */,
 				046A15B91C911D3700D81D23 /* DiscoverController.m in Sources */,
