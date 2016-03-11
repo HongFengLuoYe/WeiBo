@@ -13,6 +13,13 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "UIView+Extension.h"
 #import "UIBarButtonItem+Extension.h"
+#import "HFYSearchbBar.h"
+
+#ifdef DEBUG // 处于开发阶段
+#define FYLog(...) NSLog(__VA_ARGS__)
+#else // 处于发布阶段
+#define HWLog(...)
+#endif
 
 
 #define RandomClolor  [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]

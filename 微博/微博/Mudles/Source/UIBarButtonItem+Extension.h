@@ -10,6 +10,6 @@
 
 @interface UIBarButtonItem (Extension)
 
-+(UIBarButtonItem*)creatNavigionItemsWithTarget:(id)target Action:(SEL)action AndImage:(NSString *)image AndhighLightedImage:(NSString *)highlightedImage;
++(UIBarButtonItem*)itemsWithTarget:(id)target Action:(SEL)action AndImage:(NSString *)image AndhighLightedImage:(NSString *)highlightedImage;
 
 @end

@@ -21,9 +21,9 @@
 
 -(void)createItems
 {
-    self.navigationItem.leftBarButtonItem =[UIBarButtonItem creatNavigionItemsWithTarget:self Action:@selector(friendsearch) AndImage:@"navigationbar_friendsearch" AndhighLightedImage:@"navigationbar_friendsearch_highlighted"];
+    self.navigationItem.leftBarButtonItem =[UIBarButtonItem itemsWithTarget:self Action:@selector(friendsearch) AndImage:@"navigationbar_friendsearch" AndhighLightedImage:@"navigationbar_friendsearch_highlighted"];
     
-    self.navigationItem.rightBarButtonItem =[UIBarButtonItem creatNavigionItemsWithTarget:self Action:@selector(pop) AndImage:@"navigationbar_pop" AndhighLightedImage:@"navigationbar_pop_highlighted"];
+    self.navigationItem.rightBarButtonItem =[UIBarButtonItem itemsWithTarget:self Action:@selector(pop) AndImage:@"navigationbar_pop" AndhighLightedImage:@"navigationbar_pop_highlighted"];
     
 }
 

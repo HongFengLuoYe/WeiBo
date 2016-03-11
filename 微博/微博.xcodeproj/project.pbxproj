@@ -19,6 +19,7 @@
 		046A161D1C9172B900D81D23 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046A16121C9172B900D81D23 /* TestViewController.xib */; };
 		046A161E1C9172B900D81D23 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A16151C9172B900D81D23 /* UIView+Extension.m */; };
 		046A16241C918DD600D81D23 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046A16231C918DD600D81D23 /* UIBarButtonItem+Extension.m */; };
+		04ACCBC01C92BF1B0033578A /* HFYSearchbBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ACCBBF1C92BF1B0033578A /* HFYSearchbBar.m */; };
 		04CB877E1C9010500015F0B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB877D1C9010500015F0B2 /* main.m */; };
 		04CB87971C9010500015F0B2 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB87961C9010500015F0B2 /* __Tests.m */; };
 		04CB87A21C9010500015F0B2 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB87A11C9010500015F0B2 /* __UITests.m */; };
@@ -66,6 +67,8 @@
 		046A16151C9172B900D81D23 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		046A16221C918DD600D81D23 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		046A16231C918DD600D81D23 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		04ACCBBE1C92BF1B0033578A /* HFYSearchbBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFYSearchbBar.h; sourceTree = "<group>"; };
+		04ACCBBF1C92BF1B0033578A /* HFYSearchbBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFYSearchbBar.m; sourceTree = "<group>"; };
 		04CB87791C9010500015F0B2 /* 微博.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微博.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CB877D1C9010500015F0B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04CB878D1C9010500015F0B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				046A16151C9172B900D81D23 /* UIView+Extension.m */,
 				046A16221C918DD600D81D23 /* UIBarButtonItem+Extension.h */,
 				046A16231C918DD600D81D23 /* UIBarButtonItem+Extension.m */,
+				04ACCBBE1C92BF1B0033578A /* HFYSearchbBar.h */,
+				04ACCBBF1C92BF1B0033578A /* HFYSearchbBar.m */,
 			);
 			name = Source;
 			path = Mudles/Source;
@@ -500,6 +505,7 @@
 				046A16161C9172B900D81D23 /* HomeController.m in Sources */,
 				046A16241C918DD600D81D23 /* UIBarButtonItem+Extension.m in Sources */,
 				046A15D61C91706700D81D23 /* NavigationController.m in Sources */,
+				04ACCBC01C92BF1B0033578A /* HFYSearchbBar.m in Sources */,
 				046A16171C9172B900D81D23 /* MessageController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

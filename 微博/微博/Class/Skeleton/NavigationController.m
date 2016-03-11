@@ -28,6 +28,8 @@
     disableTextAttri[NSForegroundColorAttributeName] = [UIColor grayColor];
     disableTextAttri[NSFontAttributeName] = [UIFont systemFontOfSize:13];
     [item setTitleTextAttributes:disableTextAttri forState:UIControlStateDisabled];
+    
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,9 +43,9 @@
     if (self.viewControllers.count>0) {
         viewController.hidesBottomBarWhenPushed = YES;
         
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem creatNavigionItemsWithTarget:self Action:@selector(back) AndImage:@"navigationbar_back" AndhighLightedImage:@"navigationbar_back_highlighted"];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemsWithTarget:self Action:@selector(back) AndImage:@"navigationbar_back" AndhighLightedImage:@"navigationbar_back_highlighted"];
         
-        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem creatNavigionItemsWithTarget:self Action:@selector(more) AndImage:@"navigationbar_more" AndhighLightedImage:@"navigationbar_more_highlighted"];
+        viewController.navigationItem.rightBarButtonItem = [UIBarButtonItem itemsWithTarget:self Action:@selector(more) AndImage:@"navigationbar_more" AndhighLightedImage:@"navigationbar_more_highlighted"];
         }
     [super pushViewController:viewController animated:animated];
 

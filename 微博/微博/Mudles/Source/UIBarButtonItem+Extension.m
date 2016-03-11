@@ -10,7 +10,7 @@
 
 @implementation UIBarButtonItem (Extension)
 
-+(UIBarButtonItem*)creatNavigionItemsWithTarget:(id)target Action:(SEL)action AndImage:(NSString *)image AndhighLightedImage:(NSString *)highlightedImage
++(UIBarButtonItem*)itemsWithTarget:(id)target Action:(SEL)action AndImage:(NSString *)image AndhighLightedImage:(NSString *)highlightedImage
 {
     UIButton *Button = [UIButton buttonWithType:UIButtonTypeCustom];
     [Button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];

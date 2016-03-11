@@ -49,7 +49,6 @@
 {
     
     
-//    viewCtrl.view.backgroundColor = RandomClolor;
     viewCtrl.title = title;
     viewCtrl.tabBarItem.image = [UIImage imageNamed:image];
     viewCtrl.tabBarItem.selectedImage = [[UIImage imageNamed:selectImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -63,7 +62,6 @@
     [viewCtrl.tabBarItem setTitleTextAttributes:SelectTextAttributes forState:UIControlStateSelected];
     NavigationController *navigationCtrl = [[NavigationController alloc] initWithRootViewController:viewCtrl];
 
-    
     [self addChildViewController:navigationCtrl];
 }
 

@@ -33,6 +33,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(writePrivateLetter)];
+    
+    self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 -(void)writePrivateLetter
 {
